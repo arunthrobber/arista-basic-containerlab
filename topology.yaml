@@ -1,0 +1,13 @@
+name: test-lab
+prefix: "" 
+topology:
+  kinds:
+    ceos:
+      image: ceos:4.33.4M
+  nodes:
+    ceos1:
+      kind: ceos 
+    ceos2:
+      kind: ceos
+  links:
+    - endpoints: ["ceos1:eth1", "ceos2:eth1"]
